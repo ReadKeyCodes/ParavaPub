@@ -72,7 +72,11 @@ main p {
   line-height: 1.6;
   color: #555;
 }
-
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
 .socials img {
   width: 25px;
   height: 25px;
