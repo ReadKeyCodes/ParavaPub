@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Story | Parava Publications</title>
+     <style>
+        :root {
+            --primary: #2d3436;
+            --accent: #6c5ce7;
+            --text-dark: #2d3436;
+            --text-light: #fdfdfd;
+            --bg-glass: rgba(255, 255, 255, 0.9);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: #f4f7f6;
+        }
+
+        h1, h2, .motto {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* --- Header & Logo --- */
+        header {
+            background: var(--bg-glass);
+            padding: 1rem 5%;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            z-index: 1000;
+        }
+
+        .logo-container img {
+            max-height: 60px; /* Adjust height to your shape */
+            width: auto;
+            display: block;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-dark);
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover { color: var(--accent); }
+
+        /* --- Hero Section --- */
+        .hero {
+            padding: 100px 10%;
+            text-align: center;
+            background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+            color: white;
+        }
+
+        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+        .motto { font-style: italic; font-size: 1.5rem; opacity: 0.9; }
+
+        /* --- Sections --- */
+        section { padding: 80px 10%; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover { transform: translateY(-5px); }
+
+        /* --- Buttons --- */
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 50px 10% 20px;
+            text-align: center;
+        }
+
+        .copyright {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+            <img src="your-logo-file.png" alt="Parava Publications Logo">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">Our Story</a>
+            <a href="publish.html">Publish</a>
+            <a href="authors.html">Authors</a>
+            <a href="books.html">Bookshelf</a>
+            <a href="sellers.html">Earn</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+</header>
+
+<section class="hero">
+    <h1>Our Story</h1>
+    <p class="motto">Built by Students. Built for Stories.</p>
+</section>
+
+<section>
+    <h2>Why We Started</h2>
+    <p>
+        Parava Publications began as a student initiative to solve one problem:
+        talented voices remain unheard due to lack of access.
+    </p>
+
+    <p>
+        Traditional publishing is often inaccessible, expensive, or gatekept.
+        We chose to build a transparent alternative — one that prioritizes
+        young writers and creative independence.
+    </p>
+</section>
+
+<section style="background:#eceff1;">
+    <h2>Our Values</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Ownership</h3>
+            <p>Authors retain their rights. Your story belongs to you.</p>
+        </div>
+        <div class="card">
+            <h3>Transparency</h3>
+            <p>No hidden fees. No hidden clauses.</p>
+        </div>
+        <div class="card">
+            <h3>Quality</h3>
+            <p>Professional editing, formatting, and cover design standards.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="logo-container" style="margin-bottom: 20px;">
+            <img src="your-logo-file.png" alt="Parava Footer Logo" style="filter: brightness(0) invert(1); margin: 0 auto;">
+    </div>
+    <p>Parava Publications</p>
+        
+    <div class="copyright">
+        <p>&copy; 2026 Parava Publications. All Rights Reserved. | The Voice of Unheard Voices.</p>
+    </div>
+</footer>
+
+</body>
+</html>
