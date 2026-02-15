@@ -38,6 +38,19 @@
             display: block;
         }
 
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
         nav a {
             text-decoration: none;
             color: var(--text-dark);
@@ -114,3 +127,87 @@
         .book-cover:hover {
             transform: scale(1.03);
         }
+        .brand-link {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+        .brand-link:hover {
+            opacity: 0.85;
+        }
+        .brand-link img {
+            display: block;
+        }
+
+
+/* POPUP OVERLAY */
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 3000;
+}
+
+/* POPUP CARD */
+.popup-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    text-align: left;
+    position: relative;
+    animation: popupFade 0.3s ease;
+}
+
+.popup-card h2 {
+    margin-bottom: 10px;
+}
+
+.popup-card h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.popup-list {
+    margin-left: 20px;
+}
+
+.popup-list li {
+    margin-bottom: 8px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* Animation */
+@keyframes popupFade {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.social-buttons .btn {
+    flex: 1 1 45%;
+    text-align: center;
+}
